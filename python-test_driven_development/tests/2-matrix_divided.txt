@@ -30,9 +30,6 @@ Now test it:
     >>> matrix_divided([[3, 4], [6, 7]], -2)
     [[-1.5, -2.0], [-3.0, -3.5]]
 
-    >>> matrix_divided([[2, 3], [4, 5]], float('inf'))
-    [[0.0, 0.0], [0.0, 0.0]]
-
     >>> matrix_divided([[3, 4]])
     Traceback (most recent call last):
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
