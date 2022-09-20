@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
     rounded to 2 decimal places.
     """
 
-    if not isinstance(matrix, list):
+    if not isinstance(matrix, list) or len(matrix) == 0 or not matrix[0]:
         raise TypeError("matrix must be a matrix (list of lists) " +
                         "of integers/floats")
 
