@@ -11,7 +11,10 @@ def matrix_divided(matrix, div):
     if not isinstance(matrix, list) or len(matrix) == 0 or not matrix[0]:
         raise TypeError("matrix must be a matrix (list of lists) " +
                         "of integers/floats")
-
+    for x in row:
+        if type(x) is not int and type(x) is not float:
+            raise TypeError("matrix must be a matrix (list of lists) " +
+                                "of integers/floats")
     len_rows = []
     for row in matrix:
         len_rows.append(len(row))
