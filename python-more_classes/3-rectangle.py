@@ -54,7 +54,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def str(self):
-        """Returns a representation of a rectangle made by '#' """
+        """Returns a representation of a rectangle made by '#' character."""
         if self.__height == 0 or self.__width == 0:
             return ''
         rec_str = ''
