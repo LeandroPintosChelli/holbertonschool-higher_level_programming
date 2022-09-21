@@ -90,6 +90,7 @@ class Rectangle:
         if rect_1.area() < rect_2.area():
             return rect_2
 
+    @classmethod
     def square(cls, size=0):
         """Creates a new Rectangle instance with width == height == size
         size: size to set the new rectangle.
