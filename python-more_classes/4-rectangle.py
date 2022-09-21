@@ -67,4 +67,3 @@ class Rectangle:
         that is able to recreate a new instance by using eval()
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
-        
