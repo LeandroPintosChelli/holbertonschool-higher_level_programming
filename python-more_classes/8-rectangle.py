@@ -76,7 +76,7 @@ class Rectangle:
         """Deletes a Rectangle."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-    
+
     def bigger_or_equal(rect_1, rect_2):
         """Returns the biggest rectangle based on the area.
         rect_1: instance fo the rectangle
