@@ -29,7 +29,7 @@ class Rectangle:
     def height(self):
         """Retrieves the height of a rectangle"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle
@@ -39,3 +39,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+        
