@@ -2,9 +2,6 @@
 """Defines a rectangle class"""
 
 
-from curses.textpad import rectangle
-
-
 class Rectangle:
     """Rectangle class defined by width and height."""
 
@@ -53,14 +50,14 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
 
-    def __str__(self):
+    def str(self):
         """Returns a printable representation
         of a Rectangle with the '#' character."""
         if self.__height == 0 or self.__width == 0:
             return ''
-        rec_str = ''
+        rectangle_str = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                rec_str += '#'
-            rec_str += '\n'
-        return rec_str[:-1]
+                rectangle_str += '#'
+            rectangle_str += '\n'
+        return rectangle_str[:-1]
