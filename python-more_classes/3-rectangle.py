@@ -10,7 +10,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    def str(self):
+    def __str__(self):
         """Returns a printable representation
         of a Rectangle with the '#' character."""
         if self.__height == 0 or self.__width == 0:
@@ -61,4 +61,3 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__width + self.__height)
-        
