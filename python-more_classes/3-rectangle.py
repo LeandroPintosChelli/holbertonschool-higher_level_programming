@@ -10,18 +10,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    def __str__(self):
-        """Returns a printable representation
-        of a Rectangle with the '#' character."""
-        if self.__height == 0 or self.__width == 0:
-            return ''
-        rectangle_str = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rectangle_str += '#'
-            rectangle_str += '\n'
-        return rectangle_str[:-1]
-
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""
@@ -61,3 +49,15 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """Returns a printable representation
+        of a Rectangle with the '#' character."""
+        if self.__height == 0 or self.__width == 0:
+            return ''
+        rectangle_str = ''
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rectangle_str += '#'
+            rectangle_str += '\n'
+        return rectangle_str[:-1]
