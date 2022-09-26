@@ -30,3 +30,5 @@ Now test it:
 
     >>> new_list.print_sorted()
     []
+
+    >>> my_list = MyList("hello")
