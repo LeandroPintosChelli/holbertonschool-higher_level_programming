@@ -63,7 +63,7 @@ Now test it:
     Traceback (most recent call last):
     TypeError: age must be an integer
 
-    >>> BaseGeometry.integer_validator("average")
+    >>> BaseGeometry.integer_validator("age")
     Traceback (most recent call last):
     TypeError: integer_validator() missing 1 required positional argument: 'value'
 
