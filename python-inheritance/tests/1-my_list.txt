@@ -31,4 +31,5 @@ Now test it:
     >>> new_list.print_sorted()
     []
 
-    >>> my_list = MyList("hello")
+    >>> my_list.print_sorted()
+    [1, 2, 5]
