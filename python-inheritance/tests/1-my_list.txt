@@ -21,4 +21,4 @@ Now test it:
     >>> new_list = MyList()
 
     >>> my_list
-    ['h', 'e', 'l', 'l', 'o']
+    [1]
