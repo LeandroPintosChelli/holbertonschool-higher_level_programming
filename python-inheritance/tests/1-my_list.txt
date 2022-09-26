@@ -25,3 +25,8 @@ Now test it:
 
     >>> my_list.print_sorted()
     [1]
+
+    >>> my_list = MyList([2, 5, 1])
+
+    >>> new_list.print_sorted()
+    []
