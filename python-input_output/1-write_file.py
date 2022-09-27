@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""Counts number of lines in a file."""
+"""Module 3-write_file.
+Writes in a text file.
+"""
 
 
 def write_file(filename="", text=""):
-    """Counts lines in filename."""
+    """Writes text in filename.
+    Args:
+        - filename: name of the file
+        - text: string to write in the file
+    Returns: number of characters written
+    """
 
-    count = 0
-
-    with open(filename) as file:
-        text = file.readlines()
-        for line in text:
-            count += 1
-
-    return count
+    with open(filename, 'w+') as file:
+        return file.write(text)
