@@ -13,4 +13,4 @@ try:
     load = load_from_json_file("add_item.json")
 except ValueError:
     load = []
-save_to_json_file(load + sys.argv[:], "add_item.json")
+save_to_json_file(load + sys.argv[1:], "add_item.json")
