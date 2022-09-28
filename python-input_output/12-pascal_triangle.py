@@ -44,10 +44,7 @@ class Student:
             setattr(self, key, value)
 
     def pascal_triangle(n):
-        """Represent Pascal's Triangle of size n.
-
-        Returns a list of lists of integers representing the triangle.
-        """
+        """Represent Pascal's Triangle of size n."""
 
         if n <= 0:
             return []
