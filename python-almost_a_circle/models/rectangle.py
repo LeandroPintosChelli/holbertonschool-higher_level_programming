@@ -104,12 +104,6 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def str(self):
-        """Return a str representation of a Rectangle"""
-
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(
-            self.id, self.__x, self.__y, self.__width, self.__height)
-
     def update(self, *args, **kwargs):
         """Update the Rectangle.
         Args:
