@@ -134,3 +134,11 @@ class Rectangle(Base):
                     if type(value) != int and value is not None:
                         raise TypeError("id must be an integer")
                     self.id = value
+                if key == "width":
+                    self.width = value
+                if key == "height":
+                    self.height = value
+                if key == "x":
+                    self.x = value
+                if key == "y":
+                    self.y = value
