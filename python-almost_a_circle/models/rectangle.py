@@ -18,10 +18,10 @@ class Rectangle(Base):
             - id: id
             """
 
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -71,7 +71,8 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """Sets x attribute."""
-
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
