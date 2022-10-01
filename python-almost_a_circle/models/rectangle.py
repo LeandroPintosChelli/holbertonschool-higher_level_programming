@@ -128,7 +128,9 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) > 4:
             self.y = args[4]
-        if args is not None and len(args) != 0:
-            if len(args) >= 1:
-                if type(args[0]) != int and args[0] is not None:
-                    raise TypeError("id must be an integer")
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if type(value) != int and value is not None:
+                        raise TypeError("id must be an integer")
+                    self.id = value
