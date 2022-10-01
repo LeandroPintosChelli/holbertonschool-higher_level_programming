@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Create a Rectangle class, inheriting from Base."""
-
-from ast import Str
 import json
 from models.base import Base
 
@@ -105,6 +103,8 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """Returns a string representation of a Rectangle instance."""
+
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
