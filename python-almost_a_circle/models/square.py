@@ -6,6 +6,7 @@ Create a Square class, inheriting from Rectangle.
 from models.base import Base
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """Class describing a square.
     Inherits from Rectangle."""
@@ -26,4 +27,4 @@ class Square(Rectangle):
         """Returns a string representation of a Square instance."""
 
         return "[Square] ({}) {}/{} - {}".format(
-            self.id, self.x, self.y, self.__width)
+            self.id, self.x, self.y, self.width)
