@@ -21,5 +21,4 @@ if __name__ == "__main__":
         "SELECT * FROM states WHERE name LIKE '{:s}'ORDER BY id ASC"
         .format(argv[4]))
     for row in cursor.fetchall():
-        if row[1] == argv[4]:
-            print(row)
+        print(row)
