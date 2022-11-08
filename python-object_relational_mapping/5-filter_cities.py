@@ -22,5 +22,4 @@ if __name__ == "__main__":
                     INNER JOIN cities ON states.id = cities.states_id
                     WHERE states.name LIKE %s
                     ORDER BY cities.id ASC""", (argv[4]))
-    for row in cursor.fetchall():
-        print(", ".join(row[2]))
+    print(", ".join([ct[2] for ct in cursor.fetchall() if ct[4] == argv[4]]))
