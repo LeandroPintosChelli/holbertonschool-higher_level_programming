@@ -18,8 +18,9 @@ if __name__ == "__main__":
 
     cursor = database.cursor()
     cursor.execute("""SELECT cities.name
-                    FROM states
-                    INNER JOIN cities ON states.id = cities.states_id
-                    WHERE states.name LIKE %s
-                    ORDER BY cities.id ASC""", (argv[4]))
-    print(", ".join([ct[2] for ct in cursor.fetchall() if ct[4] == argv[4]]))
+                 FROM states
+                 INNER JOIN cities ON states.id = cities.state_id
+                 WHERE states.name LIKE %s
+                 ORDER BY cities.id ASC""", (argv[4], ))
+
+    print(', '.join(["{:s}".format(row[0]) for row in cursor.fetchall()]))
