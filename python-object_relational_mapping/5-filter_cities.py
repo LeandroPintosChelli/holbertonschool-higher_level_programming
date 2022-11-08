@@ -23,4 +23,4 @@ if __name__ == "__main__":
                     WHERE states.name LIKE %s
                     ORDER BY cities.id ASC""", (argv[4]))
     for row in cursor.fetchall():
-        print(row)
+        print(", ".join(row[2]))
