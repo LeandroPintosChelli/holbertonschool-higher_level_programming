@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script that adds the State object “Louisiana” to the database hbtn_0e_6_usa"""
+"""Script that adds the State object “Louisiana” 
+to the database hbtn_0e_6_usa"""
 
 from sys import argv
 from model_state import Base, State
@@ -14,7 +15,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    l = State(name="Louisiana")
-    session.add(l)
+    loui = State(name="Louisiana")
+    session.add(loui)
     session.commit()
-    print(l.id)
+    print(loui.id)
