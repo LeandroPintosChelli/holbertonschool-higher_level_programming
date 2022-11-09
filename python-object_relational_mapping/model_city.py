@@ -16,6 +16,6 @@ class City(Base):
     Linked to MySQL table "city"
     """
     __tablename__ = "cities"
-    id = Column(Integer, nullable=False, primary_key=True)  # autoincrements
+    id = Column(Integer, nullable=False)
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
