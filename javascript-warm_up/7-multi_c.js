@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// Script that prints x times “C is fun”
 
 const num = parseInt(process.argv[2]);
 if (isNaN(num)) {
