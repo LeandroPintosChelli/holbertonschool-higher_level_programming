@@ -4,7 +4,7 @@
 
 const request = require('request');
 let films = 0;
-let url = process.argv[2]
+const url = process.argv[2];
 
 request(url, function (error, response, body) {
   if (error == null) {
